@@ -1,0 +1,20 @@
+Name: Chetan Reddy
+NetID: cr217
+Hours Spent: 4
+Consulted With: Peter Tan, Surya Prabhakar, Sean Snider, Melanie Goetz
+Resources Used: The Online video, slides, and stackoverflow
+Impressions: Not bad at all
+Benchmarking Part 1: 
+Part A;
+This process is linear with O(n) notation. We concluded this is the case by looking at the data points and trend line with an R^2 value of 0.99786 and seeing that the trend line is a relatively straight line. We were able to generate this data by running DNABenchmark within Eclipse and then plotting out the Recomb Length on the X axis with the Simple Strand run time on the Y axis. 
+Results and Analysis are in PDF with more detailed information!
+
+Part B;
+We determined the power of two string by looking at the last splice before out of memory error and the associated run time. Please see the table in my PDF for more information that is asked for in the analysis. 
+Results and Analysis are in PDF with more detailed information!
+
+
+
+Benchmarking Part 2: 
+My LinkStrand code is O(B). The way that I determined this was that I first made three text files, ecoli, ecoli2, and ecoli3. Ecoli2 is two times bigger than ecoli and Ecoli3 is three times bigger than ecoli. Once these were created, I ran the DNA benchmark for these three different text files and averaged the run time for each of the three. My data shows that for the first, ecoli, that had a length of 4,639,221, and a run time average of 0.025. Ecoli2 has a length of 9,278,442 and an average run time of 0.0477. Ecoli3 has a length of 13,917,663 and an average run time of 0.0727. As you can see, the run time is increasing by 2x and 3x as the length of the DNA increases by 2x and 3x. Thus, as the breakpoints increase, the run time increases linearly at O(B). I have included a graph of what this looks like and a table.
+Results and Analysis are in PDF
